@@ -20,4 +20,11 @@ public class BaseClass {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(byVar));
 		return driver.findElement(byVar);
 	}
+	
+	public WebElement waitTillClickable(By byVar)
+	{
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.elementToBeClickable(byVar));
+		return driver.findElement(byVar);
+	}
 }
