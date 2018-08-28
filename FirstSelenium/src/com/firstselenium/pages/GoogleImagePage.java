@@ -29,7 +29,7 @@ public class GoogleImagePage extends BaseClass
 	
 	public GoogleImagePage clickOnFirstImge()
 	{
-		waitTillVisibility(byImageCSSalt).click();
+		waitTillClickable(byImageCSSalt).click();
 		return this;
 	}
 }
